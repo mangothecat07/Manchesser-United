@@ -58,7 +58,7 @@ namespace ChessChallenge.Application
 
         public ChallengeController()
         {
-            Log($"Launching Chess-Challenge version {Settings.Version}");
+            Log($"Launching ManchesserUnited version {Settings.Version}");
             (tokenCount, debugTokenCount) = GetTokenCount();
             Warmer.Warm();
 
