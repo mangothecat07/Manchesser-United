@@ -1,12 +1,12 @@
-EXE = Boychesser
+EXE = Manchesser-United
 ifeq ($(OS),Windows_NT)
-	SRC := Boychesser.Uci.exe
+	SRC := ManchesserUnited.Uci.exe
 	DEST := $(EXE).exe
 else
-	SRC := Boychesser.Uci
+	SRC := ManchesserUnited.Uci
 	DEST := $(EXE)
 endif
 
 all:
-	dotnet publish -c Release Boychesser.Uci/ --output Boychesser.Uci/bin/OpenbenchBin
-	mv Boychesser.Uci/bin/OpenbenchBin/$(SRC) ./$(DEST)
+	dotnet publish -c Release ManchesserUnited.Uci/ --output ManchesserUnited.Uci/bin/OpenbenchBin
+	mv BManchesserUnited.Uci/bin/OpenbenchBin/$(SRC) ./$(DEST)

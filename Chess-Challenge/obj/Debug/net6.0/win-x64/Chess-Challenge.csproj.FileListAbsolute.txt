@@ -744,3 +744,4 @@ D:\codes\C#\Manchesser United\Chess-Challenge\obj\Debug\net6.0\win-x64\refint\Ch
 D:\codes\C#\Manchesser United\Chess-Challenge\obj\Debug\net6.0\win-x64\Chess-Challenge.pdb
 D:\codes\C#\Manchesser United\Chess-Challenge\obj\Debug\net6.0\win-x64\Chess-Challenge.genruntimeconfig.cache
 D:\codes\C#\Manchesser United\Chess-Challenge\obj\Debug\net6.0\win-x64\ref\Chess-Challenge.dll
+D:\codes\C#\Manchesser United\Chess-Challenge\obj\Debug\net6.0\win-x64\Chess-Challenge.sourcelink.json

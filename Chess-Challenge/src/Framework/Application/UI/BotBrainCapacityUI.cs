@@ -32,7 +32,7 @@ namespace ChessChallenge.Application
                 col = orange;
             else
                 col = red;
-            Raylib.DrawRectangle(0, screenHeight - height, (int)(screenWidth * t), height, col);
+           // Raylib.DrawRectangle(0, screenHeight - height, (int)(screenWidth * t), height, col);
 
             var textPos = new System.Numerics.Vector2(screenWidth / 2, screenHeight - height / 2);
             string text = $"Bot Brain Capacity: {activeTokenCount}/{tokenLimit}";
@@ -44,7 +44,7 @@ namespace ChessChallenge.Application
             {
                 text += $"    ({totalTokenCount} with Debugs included)";
             }
-            UIHelper.DrawText(text, textPos, fontSize, 1, Color.WHITE, UIHelper.AlignH.Centre);
+        //    UIHelper.DrawText(text, textPos, fontSize, 1, Color.WHITE, UIHelper.AlignH.Centre);
         }
     }
 }
