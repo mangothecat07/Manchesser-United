@@ -4,6 +4,8 @@ using Raylib_cs;
 using System;
 using System.IO;
 using System.Linq;
+using Raylib_cs;
+using System.Numerics;
 using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading;
@@ -270,7 +272,17 @@ namespace ChessChallenge.Application
                 }
             }
         }
-
+    /*      int nameFontSize = UIHelper.ScaleInt(40);
+                int regularFontSize = UIHelper.ScaleInt(35);
+                int headerFontSize = UIHelper.ScaleInt(45);
+                Color col = new(180, 180, 180, 255);
+                Vector2 startPos = UIHelper.Scale(new Vector2(1500, 250));
+                float spacingY = UIHelper.Scale(35);
+                void DrawNextText(string text, int fontSize, Color col)
+                {
+                    UIHelper.DrawText(text, startPos, fontSize, 1, col);
+                    startPos.Y += spacingY;
+                } */
         void EndGame(GameResult result, bool log = true, bool autoStartNextBotMatch = true)
         {
             if (isPlaying)
@@ -282,6 +294,15 @@ namespace ChessChallenge.Application
                 if (log)
                 {
                     Log("Game Over: " + result, false, ConsoleColor.Blue);
+                     int nameFontSize = UIHelper.ScaleInt(40);
+                int regularFontSize = UIHelper.ScaleInt(35);
+                int headerFontSize = UIHelper.ScaleInt(45);
+                Color col = new(180, 180, 180, 255);
+                Vector2 startPos = UIHelper.Scale(new Vector2(1500, 250));
+                float spacingY = UIHelper.Scale(35);
+                MatchStatsUI.DrawNextText($"Human vs Human", headerFontSize, Color.WHITE);;
+
+
                 }
 
                 string pgn = PGNCreator.CreatePGN(board, result, GetPlayerName(PlayerWhite), GetPlayerName(PlayerBlack));
@@ -291,6 +312,7 @@ namespace ChessChallenge.Application
                 if (PlayerWhite.IsBot && PlayerBlack.IsBot)
                 {
                     UpdateBotMatchStats(result);
+
                     botMatchGameIndex++;
                     int numGamesToPlay = botMatchStartFens.Length * 2;
 
@@ -310,6 +332,18 @@ namespace ChessChallenge.Application
                         Log("Match finished", false, ConsoleColor.Blue);
                     }
                 }
+                  if (PlayerWhite.IsHuman && PlayerBlack.IsHuman)
+                {
+                    UpdateBotMatchStats(result);
+                    GameResult result1 = Arbiter.GetGameState(board);
+                     int regularFontSize = UIHelper.ScaleInt(35);
+                int headerFontSize = UIHelper.ScaleInt(45);
+                Color col = new(180, 180, 180, 255);
+                Vector2 startPos = UIHelper.Scale(new Vector2(1500, 250));
+                float spacingY = UIHelper.Scale(35);
+                    MatchStatsUI.DrawNextText($"Result + {result1}", regularFontSize, col);
+                    
+                }  
             }
         }
 
@@ -347,8 +381,11 @@ namespace ChessChallenge.Application
                     stats.NumTimeouts += (result is GameResult.WhiteTimeout or GameResult.BlackTimeout) ? 1 : 0;
                     stats.NumIllegalMoves += (result is GameResult.WhiteIllegalMove or GameResult.BlackIllegalMove) ? 1 : 0;
                 }
+                   
+
             }
         }
+        
 
         public void Update()
         {
@@ -391,7 +428,16 @@ namespace ChessChallenge.Application
         {
             BotBrainCapacityUI.Draw(tokenCount, debugTokenCount, MaxTokenCount);
             MenuUI.DrawButtons(this);
-            MatchStatsUI.DrawMatchStats(this);
+            GameResult result2 = Arbiter.GetGameState(board);
+            
+            MatchStatsUI.DrawMatchStats(this,result2);
+            GameResult result1= Arbiter.GetGameState(board);
+            int nameFontSize = UIHelper.ScaleInt(40);
+            int regularFontSize = UIHelper.ScaleInt(35);
+            int headerFontSize = UIHelper.ScaleInt(45);
+            Color col2 = new(180, 180, 180, 255);
+            Vector2 startPos = UIHelper.Scale(new Vector2(1500, 250));                
+            float spacingY = UIHelper.Scale(35);            
         }
 
         static string GetPlayerName(ChessPlayer player) => GetPlayerName(player.PlayerType);
@@ -404,6 +450,11 @@ namespace ChessChallenge.Application
             string nameA = GetPlayerName(botTypeA);
             string nameB = GetPlayerName(botTypeB);
             if (nameA == nameB)
+            {
+                nameA += " (A)";
+                nameB += " (B)";
+            }
+             if (nameA == nameB)
             {
                 nameA += " (A)";
                 nameB += " (B)";

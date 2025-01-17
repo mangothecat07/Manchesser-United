@@ -267,11 +267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited.Uci\\ManchesserUnited.Uci.csproj",
+      "projectUniqueName": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited.Uci\\ManchesserUnited.Uci.csproj",
       "projectName": "ManchesserUnited.Uci",
-      "projectPath": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited.Uci\\ManchesserUnited.Uci.csproj",
+      "projectPath": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited.Uci\\ManchesserUnited.Uci.csproj",
       "packagesPath": "C:\\Users\\Kunal\\.nuget\\packages\\",
-      "outputPath": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited.Uci\\obj\\",
+      "outputPath": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited.Uci\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kunal\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -286,8 +286,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "d:\\codes\\C#\\Manchesser United\\Chess-Challenge\\Chess-Challenge.csproj": {
-              "projectPath": "d:\\codes\\C#\\Manchesser United\\Chess-Challenge\\Chess-Challenge.csproj"
+            "D:\\codes\\C#\\Manchesser United\\Chess-Challenge\\Chess-Challenge.csproj": {
+              "projectPath": "D:\\codes\\C#\\Manchesser United\\Chess-Challenge\\Chess-Challenge.csproj"
             }
           }
         }
