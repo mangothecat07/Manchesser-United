@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Chess-Challenge\Chess-Challenge.csproj" />
+    <ProjectReference Include="..\ManchesserUnited\ManchesserUnited.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

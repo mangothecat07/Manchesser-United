@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\github projects\\ManchesserUnited\\Chess-Challenge\\Chess-Challenge.csproj": {
-                "projectPath": "D:\\github projects\\ManchesserUnited\\Chess-Challenge\\Chess-Challenge.csproj"
+              "D:\\github projects\\ManchesserUnited\\ManchesserUnited\\ManchesserUnited.csproj": {
+                "projectPath": "D:\\github projects\\ManchesserUnited\\ManchesserUnited\\ManchesserUnited.csproj"
               }
             }
           }
@@ -116,14 +116,14 @@
         }
       }
     },
-    "D:\\github projects\\ManchesserUnited\\Chess-Challenge\\Chess-Challenge.csproj": {
+    "D:\\github projects\\ManchesserUnited\\ManchesserUnited\\ManchesserUnited.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github projects\\ManchesserUnited\\Chess-Challenge\\Chess-Challenge.csproj",
-        "projectName": "Chess-Challenge",
-        "projectPath": "D:\\github projects\\ManchesserUnited\\Chess-Challenge\\Chess-Challenge.csproj",
+        "projectUniqueName": "D:\\github projects\\ManchesserUnited\\ManchesserUnited\\ManchesserUnited.csproj",
+        "projectName": "ManchesserUnited",
+        "projectPath": "D:\\github projects\\ManchesserUnited\\ManchesserUnited\\ManchesserUnited.csproj",
         "packagesPath": "C:\\Users\\Kunal\\.nuget\\packages\\",
-        "outputPath": "D:\\github projects\\ManchesserUnited\\Chess-Challenge\\obj\\",
+        "outputPath": "D:\\github projects\\ManchesserUnited\\ManchesserUnited\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kunal\\AppData\\Roaming\\NuGet\\NuGet.Config"

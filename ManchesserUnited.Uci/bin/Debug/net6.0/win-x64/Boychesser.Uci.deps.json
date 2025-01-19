@@ -9,7 +9,7 @@
     ".NETCoreApp,Version=v6.0/win-x64": {
       "ManchesserUnited.Uci/1.0.0": {
         "dependencies": {
-          "Chess-Challenge": "1.0.0",
+          "ManchesserUnited": "1.0.0",
           "Microsoft.NET.ILLink.Analyzers": "7.0.100-1.23211.1",
           "Microsoft.NET.ILLink.Tasks": "7.0.100-1.23211.1",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "6.0.36"
@@ -874,12 +874,12 @@
         }
       },
       "System.Numerics.Vectors/4.5.0": {},
-      "Chess-Challenge/1.0.0": {
+      "ManchesserUnited/1.0.0": {
         "dependencies": {
           "Raylib-cs": "4.5.0.2"
         },
         "runtime": {
-          "Chess-Challenge.dll": {
+          "ManchesserUnited.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -942,7 +942,7 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "Chess-Challenge/1.0.0": {
+    "ManchesserUnited/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,8 +1,8 @@
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\resources\Fens.txt
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\resources\Pieces.png
-D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.deps.json
-D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.runtimeconfig.json
-D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.exe
+D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.deps.json
+D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.runtimeconfig.json
+D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.exe
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.Uci.exe
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\src\Evil Bot\EvilBot.cs
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\src\My Bot\MyBot.cs
@@ -236,10 +236,10 @@ D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\msco
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\mscorrc.dll
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\msquic.dll
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ucrtbase.dll
-D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.dll
+D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.dll
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Microsoft.CodeAnalysis.CSharp.dll
 D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Microsoft.CodeAnalysis.dll
-D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.pdb
+D:\github projects\Boychesser\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.pdb
 D:\github projects\Boychesser\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ManchesserUnited.Uci.csproj.AssemblyReference.cache
 D:\github projects\Boychesser\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ManchesserUnited.Uci.GeneratedMSBuildEditorConfig.editorconfig
 D:\github projects\Boychesser\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ManchesserUnited.Uci.AssemblyInfoInputs.cache
@@ -252,11 +252,11 @@ D:\github projects\Boychesser\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\refi
 D:\github projects\Boychesser\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ManchesserUnited.Uci.pdb
 D:\github projects\Boychesser\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ManchesserUnited.Uci.genruntimeconfig.cache
 D:\github projects\Boychesser\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ref\ManchesserUnited.Uci.dll
+d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.deps.json
+d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.runtimeconfig.json
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\resources\Fens.txt
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\resources\Pieces.png
-d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.deps.json
-d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.runtimeconfig.json
-d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.exe
+d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.exe
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.Uci.exe
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\src\Evil Bot\EvilBot.cs
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\src\My Bot\MyBot.cs
@@ -490,10 +490,10 @@ d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\msco
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\mscorrc.dll
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\msquic.dll
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ucrtbase.dll
-d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.dll
+d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.dll
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Microsoft.CodeAnalysis.CSharp.dll
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Microsoft.CodeAnalysis.dll
-d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\Chess-Challenge.pdb
+d:\codes\C#\Manchesser United\ManchesserUnited.Uci\bin\Debug\net6.0\win-x64\ManchesserUnited.pdb
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ManchesserUnited.Uci.csproj.AssemblyReference.cache
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ManchesserUnited.Uci.GeneratedMSBuildEditorConfig.editorconfig
 d:\codes\C#\Manchesser United\ManchesserUnited.Uci\obj\Debug\net6.0\win-x64\ManchesserUnited.Uci.AssemblyInfoInputs.cache

@@ -61,17 +61,17 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Chess-Challenge/1.0.0": {
+      "ManchesserUnited/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Raylib-cs": "4.5.0.2"
         },
         "compile": {
-          "bin/placeholder/Chess-Challenge.dll": {}
+          "bin/placeholder/ManchesserUnited.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Chess-Challenge.dll": {}
+          "bin/placeholder/ManchesserUnited.dll": {}
         }
       }
     },
@@ -116,17 +116,17 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Chess-Challenge/1.0.0": {
+      "ManchesserUnited/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Raylib-cs": "4.5.0.2"
         },
         "compile": {
-          "bin/placeholder/Chess-Challenge.dll": {}
+          "bin/placeholder/ManchesserUnited.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Chess-Challenge.dll": {}
+          "bin/placeholder/ManchesserUnited.dll": {}
         }
       }
     }
@@ -248,15 +248,15 @@
         "version.txt"
       ]
     },
-    "Chess-Challenge/1.0.0": {
+    "ManchesserUnited/1.0.0": {
       "type": "project",
-      "path": "../Chess-Challenge/Chess-Challenge.csproj",
-      "msbuildProject": "../Chess-Challenge/Chess-Challenge.csproj"
+      "path": "../ManchesserUnited/ManchesserUnited.csproj",
+      "msbuildProject": "../ManchesserUnited/ManchesserUnited.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Chess-Challenge >= 1.0.0",
+      "ManchesserUnited >= 1.0.0",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1"
     ]
@@ -286,8 +286,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\codes\\C#\\Manchesser United\\Chess-Challenge\\Chess-Challenge.csproj": {
-              "projectPath": "D:\\codes\\C#\\Manchesser United\\Chess-Challenge\\Chess-Challenge.csproj"
+            "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj": {
+              "projectPath": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj"
             }
           }
         }
@@ -367,7 +367,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
