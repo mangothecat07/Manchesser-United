@@ -87,17 +87,14 @@ namespace ChessChallenge.Application
                 DrawNextText("\n\nResult: "+ result.ToString(), regularFontSize, col);
                 
                }
-                void DrawResult1(GameResult result){
-                DrawNextText("Result: "+ result.ToString(), regularFontSize, col);
-                
-               }
-           
+
                 void DrawNextText(string text, int fontSize, Color col)
                 {
                     UIHelper.DrawText(text, startPos, fontSize, 1, col);
                     startPos.Y += spacingY;
                 }
             }
+            
         }
     }
 }

@@ -4,7 +4,6 @@ using Raylib_cs;
 using System;
 using System.IO;
 using System.Linq;
-using Raylib_cs;
 using System.Numerics;
 using System.Runtime.ExceptionServices;
 using System.Text;
@@ -69,9 +68,8 @@ namespace ChessChallenge.Application
             boardUI = new BoardUI();
             board = new Board();
             pgns = new();
-
-            BotStatsA = new BotMatchStats("IBot");
-            BotStatsB = new BotMatchStats("IBot");
+            BotStatsA = new BotMatchStats("Player(A)");
+            BotStatsB = new BotMatchStats("Player(B)");
             botMatchStartFens = FileHelper.ReadResourceFile("Fens.txt").Split('\n').Where(fen => fen.Length > 0).ToArray();
             botTaskWaitHandle = new AutoResetEvent(false);
 
@@ -332,7 +330,7 @@ namespace ChessChallenge.Application
                         Log("Match finished", false, ConsoleColor.Blue);
                     }
                 }
-                  if (PlayerWhite.IsHuman && PlayerBlack.IsHuman)
+                  if (PlayerWhite.IsHuman || PlayerBlack.IsHuman)
                 {
                     UpdateBotMatchStats(result);
                     GameResult result1 = Arbiter.GetGameState(board);
@@ -344,6 +342,7 @@ namespace ChessChallenge.Application
                     MatchStatsUI.DrawNextText($"Result + {result1}", regularFontSize, col);
                     
                 }  
+                
             }
         }
 
