@@ -3,8 +3,6 @@ using System.Numerics;
 using System;
 using ChessChallenge.Chess;
 using ChessChallenge.Example;
-using Raylib_cs;
-using System;
 using System.IO;
 using System.Linq;
 using System.Runtime.ExceptionServices;
