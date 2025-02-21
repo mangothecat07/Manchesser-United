@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj": {}
+    "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj": {}
   },
   "projects": {
-    "d:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj": {
+    "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj",
+        "projectUniqueName": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj",
         "projectName": "ManchesserUnited",
-        "projectPath": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj",
+        "projectPath": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj",
         "packagesPath": "C:\\Users\\Kunal\\.nuget\\packages\\",
-        "outputPath": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited\\obj\\",
+        "outputPath": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kunal\\AppData\\Roaming\\NuGet\\NuGet.Config"
