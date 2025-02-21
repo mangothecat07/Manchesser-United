@@ -9,8 +9,8 @@ public class MyBot : IChessBot {
     public ulong nodes = 0; // #DEBUG
     public int maxSearchTime, searchingDepth, lastScore;
 
-    Timer timer;
-    Board board;
+    Timer timer= null!;
+    Board board = null!;
 
     Move searchBestMove, rootBestMove;
 
@@ -45,8 +45,7 @@ public class MyBot : IChessBot {
         0xfff9000700010007, 0xffe90003ffeefff4, 0x00000000fff5000d,
     };
 
-    public Timer Timer { get => Timer1; set => Timer1 = value; }
-    public Timer Timer1 { get => timer; set => timer = value; }
+    public Timer Timer { get => timer; set => timer = value; }
 
     // bitshift amount is implicitly modulo 64, also used in pst part of eval function
     int EvalWeight(int item) => (int)(packedData[item >> 1] >> item * 32);
@@ -54,9 +53,9 @@ public class MyBot : IChessBot {
     public Move Think(Board boardOrig, Timer timerOrig) {
         nodes = 0; // #DEBUG
         board = boardOrig;
-        Timer1 = timerOrig;
+        timer = timerOrig;
 
-        maxSearchTime = Timer1.MillisecondsRemaining / 4;
+        maxSearchTime = timer.MillisecondsRemaining / 4;
         searchingDepth = 1;
         do
             try {
@@ -67,11 +66,11 @@ public class MyBot : IChessBot {
                 Console.WriteLine( // #DEBUG
                     "info depth {0} time {1} nodes {2} pv {3} score cp {4} nps {5}", // #DEBUG
                     searchingDepth, // #DEBUG
-                    Timer1.MillisecondsElapsedThisTurn, // #DEBUG
+                    timer.MillisecondsElapsedThisTurn, // #DEBUG
                     nodes, // #DEBUG
                     ChessChallenge.Chess.MoveUtility.GetMoveNameUCI(new(rootBestMove.RawValue)), // #DEBUG
                     lastScore, // #DEBUG
-                    nodes * 1000 / (ulong)Max(Timer1.MillisecondsElapsedThisTurn, 1) // #DEBUG
+                    nodes * 1000 / (ulong)Max(timer.MillisecondsElapsedThisTurn, 1) // #DEBUG
                 ); // #DEBUG
             } catch {
                 // out of time
@@ -80,7 +79,7 @@ public class MyBot : IChessBot {
         while (
             ++searchingDepth <= 200
                 && searchingDepth <= maxDepth // #DEBUG
-                && Timer1.MillisecondsElapsedThisTurn < maxSearchTime / 10
+                && timer.MillisecondsElapsedThisTurn < maxSearchTime / 10
         );
 
         return rootBestMove;
@@ -88,7 +87,7 @@ public class MyBot : IChessBot {
 
     public int Negamax(int alpha, int beta, int depth) {
         // abort search if out of time, but we must search at least depth 1
-        if (Timer1.MillisecondsElapsedThisTurn >= maxSearchTime && searchingDepth > 1)
+        if (timer.MillisecondsElapsedThisTurn >= maxSearchTime && searchingDepth > 1)
 #pragma warning disable CS8597 // Thrown value may be null.
             throw null;
 #pragma warning restore CS8597 // Thrown value may be null.

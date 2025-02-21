@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Player = ChessChallenge.Application.ChessPlayer;
 using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading;
@@ -56,7 +57,6 @@ namespace ChessChallenge.Application
         readonly int tokenCount;
         readonly int debugTokenCount;
         readonly StringBuilder pgns;
-
         public ChallengeController()
 
         {
@@ -69,7 +69,10 @@ namespace ChessChallenge.Application
             boardUI = new BoardUI();
             board = new Board();
             pgns = new();
+            PlayerWhite = new ChessPlayer(new HumanPlayer(boardUI), PlayerType.Human);
+            PlayerBlack = new ChessPlayer(new HumanPlayer(boardUI), PlayerType.Human);
             BotStatsA = new BotMatchStats("Player(A)");
+            botExInfo = ExceptionDispatchInfo.Capture(new Exception("Initial Exception"));
             BotStatsB = new BotMatchStats("Player(B)");
             botMatchStartFens = FileHelper.ReadResourceFile("Fens.txt").Split('\n').Where(fen => fen.Length > 0).ToArray();
             botTaskWaitHandle = new AutoResetEvent(false);
@@ -148,7 +151,9 @@ namespace ChessChallenge.Application
             try
             {
                 API.Timer timer = new(PlayerToMove.TimeRemainingMs, PlayerNotOnMove.TimeRemainingMs, GameDurationMilliseconds, IncrementMilliseconds);
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
                 API.Move move = PlayerToMove.Bot.Think(botBoard, timer);
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
                 return new Move(move.RawValue);
             }
             catch (Exception e)
@@ -167,8 +172,11 @@ namespace ChessChallenge.Application
             //playerToMove.NotifyTurnToMove(board);
             if (PlayerToMove.IsHuman)
             {
-                PlayerToMove.Human.SetPosition(FenUtility.CurrentFen(board));
-                PlayerToMove.Human.NotifyTurnToMove();
+                if (PlayerToMove.Human != null)
+                {
+                    PlayerToMove.Human.SetPosition(FenUtility.CurrentFen(board));
+                    PlayerToMove.Human.NotifyTurnToMove();
+                }
             }
             else
             {
