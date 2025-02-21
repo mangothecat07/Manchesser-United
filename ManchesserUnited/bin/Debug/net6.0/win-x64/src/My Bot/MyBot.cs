@@ -9,8 +9,8 @@ public class MyBot : IChessBot {
     public ulong nodes = 0; // #DEBUG
     public int maxSearchTime, searchingDepth, lastScore;
 
-    Timer timer;
-    Board board;
+    Timer timer= null!;
+    Board board = null!;
 
     Move searchBestMove, rootBestMove;
 
