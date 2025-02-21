@@ -58,6 +58,7 @@ namespace ChessChallenge.Application
         readonly StringBuilder pgns;
 
         public ChallengeController()
+
         {
             Log($"Launching ManchesserUnited version {Settings.Version}");
             (tokenCount, debugTokenCount) = GetTokenCount();

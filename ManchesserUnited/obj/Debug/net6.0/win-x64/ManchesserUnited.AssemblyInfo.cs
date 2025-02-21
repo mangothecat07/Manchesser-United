@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ManchesserUnited")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbeee261568a30220e449ec551454607c38d7410")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4782909980ea58f33fd112bf22eef74c0a9b5042")]
 [assembly: System.Reflection.AssemblyProductAttribute("ManchesserUnited")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ManchesserUnited")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

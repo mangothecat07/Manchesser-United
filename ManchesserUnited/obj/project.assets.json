@@ -236,11 +236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj",
+      "projectUniqueName": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj",
       "projectName": "ManchesserUnited",
-      "projectPath": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj",
+      "projectPath": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\ManchesserUnited.csproj",
       "packagesPath": "C:\\Users\\Kunal\\.nuget\\packages\\",
-      "outputPath": "d:\\codes\\C#\\Manchesser United\\ManchesserUnited\\obj\\",
+      "outputPath": "D:\\codes\\C#\\Manchesser United\\ManchesserUnited\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kunal\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -267,7 +267,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net6.0": {
@@ -336,7 +336,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

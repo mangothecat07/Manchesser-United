@@ -9,8 +9,12 @@ namespace ChessChallenge.Application
     {
         const bool throwOnAssertFail = false;
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         static MoveGenerator moveGen;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         static API.Board boardAPI;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
 
         static bool anyFailed;
 
@@ -670,7 +674,9 @@ namespace ChessChallenge.Application
         {
 
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
             API.Board board;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
             int numCaptures;
             int numChecks;
             int numMates;
@@ -731,7 +737,9 @@ namespace ChessChallenge.Application
 
         public class SearchTest2
         {
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
             API.Board board;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
             int numSkips;
             int numCalls;
             int numMates;
@@ -842,7 +850,9 @@ namespace ChessChallenge.Application
 
         public class SearchTest
         {
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
             API.Board board;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
             bool useStackalloc;
             int numLeafNodes;
             int numCalls;
