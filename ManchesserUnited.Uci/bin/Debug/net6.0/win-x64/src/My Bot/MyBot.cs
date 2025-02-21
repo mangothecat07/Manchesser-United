@@ -9,8 +9,8 @@ public class MyBot : IChessBot {
     public ulong nodes = 0; // #DEBUG
     public int maxSearchTime, searchingDepth, lastScore;
 
-    Timer timer;
-    Board board;
+    Timer timer= null!;
+    Board board = null!;
 
     Move searchBestMove, rootBestMove;
 
@@ -44,6 +44,8 @@ public class MyBot : IChessBot {
         0x004c0037004b001f, 0x00e000ca00be00ad, 0x02e30266018800eb, 0xffdcffeeffddfff3,
         0xfff9000700010007, 0xffe90003ffeefff4, 0x00000000fff5000d,
     };
+
+    public Timer Timer { get => timer; set => timer = value; }
 
     // bitshift amount is implicitly modulo 64, also used in pst part of eval function
     int EvalWeight(int item) => (int)(packedData[item >> 1] >> item * 32);
