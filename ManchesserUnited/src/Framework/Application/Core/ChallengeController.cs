@@ -272,6 +272,10 @@ namespace ChessChallenge.Application
                 if (result == GameResult.InProgress)
                 {
                     NotifyTurnToMove();
+                    if (PlayerWhite.IsHuman && PlayerBlack.IsHuman)
+            {
+                boardUI.SetPerspective(!boardUI.whitePerspective);
+            }
                 }
                 else
                 {
