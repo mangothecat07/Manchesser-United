@@ -11,7 +11,7 @@ Manchesser United blends smart heuristics, search algorithms, and elegant design
 
 ## 🎥 Project Demo
 
-<video controls src="mangothecat07/Manchesser-United/assets/demo.mp4" title="demo.mp4"></video>
+<video controls src="assets/demo.mp4" title="demo.mp4"></video>
 
 ---
 
@@ -19,13 +19,13 @@ Manchesser United blends smart heuristics, search algorithms, and elegant design
 
 
 
- ## [Board UI]  ![Board UI](mangothecat07/Manchesser-United/assets/board-ui.png)   
+ ## [Board UI]  ![Board UI](assets/board-ui.png)   
 
 ## [Move Evaluation]  
- ![Console Output](mangothecat07/Manchesser-United/assets/console-eval.png)  
+ ![Console Output](assets/console-eval.png)  
 
 ## [Engine Output]
- ![Engine Output](mangothecat07/Manchesser-United/assets/engine-output.png)
+ ![Engine Output](assets/engine-output.png)
  
 
 ---
