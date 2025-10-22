@@ -10,7 +10,8 @@ Manchesser United blends smart heuristics, search algorithms, and elegant design
 
 
 ## 🎥 Project Demo
-mangothecat07/Manchesser-United/assets/demo.mp4
+https://github.com/user-attachments/assets/796201a0-9ef9-40ec-9151-8eab01daa2ec
+
 
 
 ---
@@ -68,4 +69,5 @@ dotnet build
 
 # Run the chess engine
 dotnet run
+
 
